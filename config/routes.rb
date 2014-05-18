@@ -2,31 +2,6 @@ Testkeijiban::Application.routes.draw do
   resources :boards do
     resources :comments
   end
-  # get "comments/update"
-
-  # get "comments/destroy"
-
-  # get "comments/new"
-
-  # get "comments/create"
-
-  # get "comments/edit"
-
-
-
-  # get "boards/index"
-
-  # get "boards/new"
-
-  # delete "boards/destroy"
-
-  # get "boards/show"
-
-  # put "boards/update"
-
-  # post "boards/create"
-
-  # get "boards/edit"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
