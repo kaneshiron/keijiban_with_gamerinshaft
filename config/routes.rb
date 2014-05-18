@@ -1,17 +1,19 @@
 Testkeijiban::Application.routes.draw do
-  get "boards/index"
+   resources :boards
 
-  get "boards/new"
+  # get "boards/index"
 
-  get "boards/destroy"
+  # get "boards/new"
 
-  get "boards/show"
+  # delete "boards/destroy"
 
-  get "boards/update"
+  # get "boards/show"
 
-  get "boards/create"
+  # put "boards/update"
 
-  get "boards/edit"
+  # post "boards/create"
+
+  # get "boards/edit"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
