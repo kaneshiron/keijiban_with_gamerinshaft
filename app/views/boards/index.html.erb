@@ -3,6 +3,9 @@
 <% @boards.each do |b| %>
   <%= b.name %>
   <%= link_to 'show', board_path(b) %>
+  <%= link_to 'delete', board_path(b), method: :delete %>
+
 <% end %>
 
 <%= link_to 'new', new_board_path() %>
+
