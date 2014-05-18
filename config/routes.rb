@@ -1,15 +1,18 @@
 Testkeijiban::Application.routes.draw do
-  get "comments/update"
+  resources :boards do
+    resources :comments
+  end
+  # get "comments/update"
 
-  get "comments/destroy"
+  # get "comments/destroy"
 
-  get "comments/new"
+  # get "comments/new"
 
-  get "comments/create"
+  # get "comments/create"
 
-  get "comments/edit"
+  # get "comments/edit"
 
-   resources :boards
+
 
   # get "boards/index"
 
