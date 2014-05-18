@@ -21,8 +21,10 @@
 
 <h1>new comment</h1>
 <p>
+
 <%= form_for [@board, @board.comments.build] do |f| %>
   <%= f.text_area :content %>
   <%= f.submit %>
 <% end %>
 </p>
+

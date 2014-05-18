@@ -1,8 +1,18 @@
 <h1>Comments#edit</h1>
 <p>Find me in app/views/comments/edit.html.erb</p>
 
+<% if @comment.errors.any? %>
+  <h2>some errors had occured.</h2>
+  <% @comment.errors.full_messages.each do |e| %>
+
+    <%= e %>
+  <% end %>
+<% end %>
+
 
 <%= form_for [@board,@comment] do |f| %>
   <%= f.text_area :content, placeholder: 'comment' %>
   <%= f.submit "送信！" %>
 <% end %>
+
+
