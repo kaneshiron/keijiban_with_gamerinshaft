@@ -3,5 +3,6 @@
 
 <%= form_for @board do |f| %>
   <%= f.text_field :name, placeholder:'board' %>
+  <%= f.text_area :content, placeholder: 'content' %>
   <%= f.submit "送信！" %>
 <% end %>
