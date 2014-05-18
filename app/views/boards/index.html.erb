@@ -3,7 +3,7 @@
 <% @boards.each do |b| %>
   <%= b.name %>
   <%= link_to 'show', board_path(b) %>
-  <%= link_to 'delete', board_path(b), method: :delete %>
+  <%= link_to 'delete', board_path(b), method: :delete , confirm: "ほんとうにいいのかな…？"%>
 
 <% end %>
 
